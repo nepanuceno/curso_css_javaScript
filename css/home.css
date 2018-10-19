@@ -1,0 +1,112 @@
+.container {
+    width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    font-size: 14px;
+}
+
+.sacola{
+    /*caixa */
+    padding-right: 32px;
+    width: 120px;
+
+    /* Conteudo */
+    text-align: right;
+
+    /*Decoração*/
+    background-image: url("../img/sacola.png");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.conteudoPrincipal{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cabecalhoMenu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.footerPrincipal{
+    margin-top: 30px;
+    padding: 20px 0;
+
+    background-image: url("../img/fundo-rodape.png");
+}
+
+.social{
+    float: right;
+    /*margin: 12px; */
+    display: flex;
+}
+
+.footerContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.itemMenu{
+    display: inline;
+}
+
+.vitrine{
+    width: 47%;
+    padding: 20%;
+    box-sizing: border-box;
+}
+
+.vitrine.novidades{
+
+}
+
+.vitrine.maisVendidos{
+
+}
+
+.vitrine ol{
+    
+}
+
+/* To <li> vindo imediatamente depois de um </li> */
+.itemMenu + .itemMenu{
+    margin-left: 15px;
+}
+
+.itemSocial{
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.iconeSocialText[href *= "facebook"]{
+    background-image: url("../img/facebook.png");
+}
+
+.iconeSocialText[href *= "twitter"]{
+    background-image:  url("../img/twitter.png");
+}
+
+.iconeSocialText[href *= "plus.google"]{
+    background-image: url("../img/googleplus.png");
+}
+
+.iconeSocialText{
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+
+    overflow: hidden;
+    text-indent: -999999px;
+    white-space: nowrap;
+}

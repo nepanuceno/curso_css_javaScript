@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <title>Home | Mirror Fashion</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+    <header id="header" class="container cabecalho">
+        <h1>
+            <img src="img/logo.png" alt="Mirror Fashion">
+        </h1>
+        <div class="cabecalhoMenu">
+            <div class="sacola">
+                <a href="#">Nenhum item na sacola de compras</a>
+                <!-- sacola de compras em CSS-->
+            </div>
+            <!-- a*5{Item $} --> <!-- Ja vem instalado o Emmet - Plugin que automatiza com esses codigos automaticamente-->
+            <nav>
+                <ul>
+                    
+                    <li class="itemMenu"><a href="#">Sua Conta</a></li>
+                    <li class="itemMenu"><a href="#">Lista de Desejos</a></li>
+                    <li class="itemMenu"><a href="#">Cartão Fidelidade</a></li>
+                    <li class="itemMenu"><a href="sobre.html">Sobre</a></li>
+                    <li class="itemMenu"><a href="#">Ajuda</a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main" class="container conteudoPrincipal" style="margin-top: 10px">
+
+        <div>
+            <section>
+                <h2>Busca</h2>
+    
+                <form action="http://www.google.com">
+                    <input type="text" name="q">
+                    <input type="image" name="lupa" id="lupa" src="img/busca.png">
+                </form>
+            </section>
+    
+    
+    
+            <section>
+                <nav>
+                    <h2>Departamentos</h2>
+                    <ul>
+                        <li class="itemMenuEsquerdo"><a href="#">Item 1</a></li>
+                        <li class="itemMenuEsquerdo"><a href="#">Item 2</a></li>
+                        <li class="itemMenuEsquerdo"><a href="#">Item 3</a></li>
+                        <li class="itemMenuEsquerdo"><a href="#">Item 4</a></li>
+                        <li class="itemMenuEsquerdo"><a href="#">Item 5</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </div>
+
+        <img src="./img/destaque-home.png" role="presentation">
+
+        <!-- nav*2>h2{Vitrine $}+ol>li>*6>a[href="#"]>figure>img[src="img/produtos/miniatura$.png"]+figcation{Item $ por R\$ 120,00} -->
+
+
+        <nav class="vitrine novidades">
+            <h2>Vitrine 1</h2>
+            <ol>
+                <li>
+                    <a href="#">
+                        <figure>
+                            <img src="img/produtos/miniatura1.png" alt="">
+                            <figcation>Item 1 por R$ 120,00</figcation>
+                        </figure>
+                    </a>
+                    <a href="#">
+                        <figure>
+                            <img src="img/produtos/miniatura2.png" alt="">
+                            <figcation>Item 2 por R$ 120,00</figcation>
+                        </figure>
+                    </a>
+                    <a href="#">
+                        <figure>
+                            <img src="img/produtos/miniatura3.png" alt="">
+                            <figcation>Item 3 por R$ 120,00</figcation>
+                        </figure>
+                    </a>
+                    <a href="#">
+                        <figure>
+                            <img src="img/produtos/miniatura4.png" alt="">
+                            <figcation>Item 4 por R$ 120,00</figcation>
+                        </figure>
+                    </a>
+                    <a href="#">
+                        <figure>
+                            <img src="img/produtos/miniatura5.png" alt="">
+                            <figcation>Item 5 por R$ 120,00</figcation>
+                        </figure>
+                    </a>
+                    <a href="#">
+                        <figure>
+                            <img src="img/produtos/miniatura6.png" alt="">
+                            <figcation>Item 6 por R$ 120,00</figcation>
+                        </figure>
+                    </a>
+                </li>
+            </ol>
+        </nav>
+        <nav class="vitrine maisVendidos">
+            <h2>Vitrine 2</h2>
+            <ol>
+                <li>
+                    <a href="#">
+                        <figure>
+                            <img src="img/produtos/miniatura1.png" alt="">
+                            <figcation>Item 1 por R$ 120,00</figcation>
+                        </figure>
+                    </a>
+                    <a href="#">
+                        <figure>
+                            <img src="img/produtos/miniatura2.png" alt="">
+                            <figcation>Item 2 por R$ 120,00</figcation>
+                        </figure>
+                    </a>
+                    <a href="#">
+                        <figure>
+                            <img src="img/produtos/miniatura3.png" alt="">
+                            <figcation>Item 3 por R$ 120,00</figcation>
+                        </figure>
+                    </a>
+                    <a href="#">
+                        <figure>
+                            <img src="img/produtos/miniatura4.png" alt="">
+                            <figcation>Item 4 por R$ 120,00</figcation>
+                        </figure>
+                    </a>
+                    <a href="#">
+                        <figure>
+                            <img src="img/produtos/miniatura5.png" alt="">
+                            <figcation>Item 5 por R$ 120,00</figcation>
+                        </figure>
+                    </a>
+                    <a href="#">
+                        <figure>
+                            <img src="img/produtos/miniatura6.png" alt="">
+                            <figcation>Item 6 por R$ 120,00</figcation>
+                        </figure>
+                    </a>
+                </li>
+            </ol>
+        </nav>
+
+    </main>
+
+    <footer id="footer" class="footerPrincipal">
+        <div class="container footerContainer">
+            <img src="img/logo-rodape.png" alt="Mirror Fashion">
+            
+            <ul class="social">
+                <li class="itemSocial"><a class="iconeSocialText" href="https://pt-br.facebook.com/mirrorfashion.eu/">FaceBook da Mirror Fashion</a></li>
+                <li class="itemSocial"><a class="iconeSocialText" href="https://twitter.com/?lang=pt-br">Tweeter da Mirror Fashion</a></li>
+                <li class="itemSocial"><a class="iconeSocialText" href="https://plus.google.com/discover"> Google Plus da Mirror Fashion</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
