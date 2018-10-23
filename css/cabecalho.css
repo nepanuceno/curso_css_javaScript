@@ -1,0 +1,34 @@
+.sacola{
+    /*caixa */
+    padding-right: 32px;
+    width: 120px;
+
+    /* Conteudo */
+    text-align: right;
+
+    /*Decoração*/
+    background-image: url("../img/sacola.png");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.itemMenu{
+    display: inline;
+}
+
+/* To <li> vindo imediatamente depois de um </li> */
+.itemMenu + .itemMenu{
+    margin-left: 15px;
+}
+
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cabecalhoMenu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}

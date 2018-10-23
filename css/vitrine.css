@@ -1,0 +1,36 @@
+.vitrine{
+    width: 49%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.vitrine--novidades{
+    background-color: salmon;
+
+}
+
+.vitrine--destaques{
+
+    background-color: powderblue;
+
+}
+
+.vitrine-lista{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; */
+
+}
+
+/* .vitrine ol li{
+    width: 33%;
+} */
+
+.vitrine-imagem{
+    width: 100%;
+}
