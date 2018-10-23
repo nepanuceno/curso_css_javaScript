@@ -62,21 +62,36 @@
 }
 
 .vitrine{
-    width: 47%;
-    padding: 20%;
+    width: 49%;
+    padding: 20px;
     box-sizing: border-box;
 }
 
 .vitrine.novidades{
+    background-color: salmon;
 
 }
 
 .vitrine.maisVendidos{
 
+    background-color: powderblue;
+
 }
 
 .vitrine ol{
-    
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.vitrine ol li{
+    width: 30%;
+}
+
+.vitrine ol li img{
+    width: 100%;
 }
 
 /* To <li> vindo imediatamente depois de um </li> */
