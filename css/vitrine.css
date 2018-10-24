@@ -30,7 +30,18 @@
 /* .vitrine ol li{
     width: 33%;
 } */
+ 
+.vitrine-lista-item{
+    display: inline-block;
+    width: 30%;
+}
 
 .vitrine-imagem{
     width: 100%;
+}
+
+@supports(display: grid){
+    .vitrine-lista-item{
+        width: 100%;
+    }
 }

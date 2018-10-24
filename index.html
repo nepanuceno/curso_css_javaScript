@@ -6,19 +6,22 @@
     <title>Home | Mirror Fashion</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/container.css">
+    <link rel="stylesheet" href="css/sacola.css">
     <link rel="stylesheet" href="css/conteudo.css">
+    <link rel="stylesheet" href="css/sidebar.css">
     <link rel="stylesheet" href="css/cabecalho.css">
     <link rel="stylesheet" href="css/vitrine.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/home.css">
+
 </head>
 <body>
     <header id="header" class="container cabecalho">
         <h1>
-            <img src="img/logo.png" alt="Mirror Fashion">
+            <img class="cabecalho-logo" src="img/logo.png" alt="Mirror Fashion">
         </h1>
         <div class="cabecalhoMenu">
-            <div class="sacola">
+            <div class="sacola cabecalho-sacola">
                 <a href="#">Nenhum item na sacola de compras</a>
                 <!-- sacola de compras em CSS-->
             </div>
@@ -39,34 +42,35 @@
 
     <main id="main" class="container conteudoPrincipal" style="margin-top: 10px">
 
-            <img class="conteudoPrincipal-destaque" src="./img/destaque-home.png" role="presentation">
         
-            <section class="conteudoPrincipal-busca">
-                <h2>Busca</h2>
-    
-                <form action="http://www.google.com">
-                    <input type="text" name="q">
-                    <input type="image" name="lupa" id="lupa" src="img/busca.png">
-                </form>
-            </section>
-    
-            <section class="conteudoPrincipal-departamentos">
-                <nav>
-                    <h2>Departamentos</h2>
-                    <ul>
-                        <li class="itemMenuEsquerdo"><a href="#">Item 1</a></li>
-                        <li class="itemMenuEsquerdo"><a href="#">Item 2</a></li>
-                        <li class="itemMenuEsquerdo"><a href="#">Item 3</a></li>
-                        <li class="itemMenuEsquerdo"><a href="#">Item 4</a></li>
-                        <li class="itemMenuEsquerdo"><a href="#">Item 5</a></li>
-                    </ul>
-                </nav>
-            </section>
+        <section class="conteudoPrincipal-busca sidebar sidebar-busca">
+            <h2>Busca</h2>
+            
+            <form action="http://www.google.com">
+                <input type="text" name="q">
+                <input type="image" name="lupa" id="lupa" src="img/busca.png">
+            </form>
+        </section>
         
+        <section class="conteudoPrincipal-departamentos sidebar sidebar-departamentos">
+            <nav>
+                <h2>Departamentos</h2>
+                <ul class="conteudoPrincipal-departamentos-menu">
+                    <li class="itemMenuEsquerdo"><a href="#">Item 1</a></li>
+                    <li class="itemMenuEsquerdo"><a href="#">Item 2</a></li>
+                    <li class="itemMenuEsquerdo"><a href="#">Item 3</a></li>
+                    <li class="itemMenuEsquerdo"><a href="#">Item 4</a></li>
+                    <li class="itemMenuEsquerdo"><a href="#">Item 5</a></li>
+                </ul>
+            </nav>
+        </section>
+        
+        <img class="conteudoPrincipal-destaque" src="./img/destaque-home.png" role="presentation">
+
         <nav class="vitrine vitrine--novidades conteudoPrincipal-vitrine conteudoPrincipal-vitrine1">
             <h2 class="vitrine-titulo">Novidades</h2>
             <ol class="vitrine-lista">
-                <li>
+                <li class="vitrine-lista-item">
                     <a href="#">
                         <figure>
                             <img class="vitrine-imagem" src="img/produtos/miniatura1.png" alt="">
@@ -74,7 +78,7 @@
                         </figure>
                     </a>
                 </li>
-                <li>
+                <li class="vitrine-lista-item">
                     <a href="#">
                         <figure>
                             <img class="vitrine-imagem" src="img/produtos/miniatura2.png" alt="">
@@ -82,7 +86,7 @@
                         </figure>
                     </a>
                 </li>
-                <li>
+                <li class="vitrine-lista-item">
                     <a href="#">
                         <figure>
                             <img class="vitrine-imagem" src="img/produtos/miniatura3.png" alt="">
@@ -90,7 +94,7 @@
                         </figure>
                     </a>
                 </li>
-                <li>
+                <li class="vitrine-lista-item">
                     <a href="#">
                         <figure>
                             <img class="vitrine-imagem" src="img/produtos/miniatura4.png" alt="">
@@ -98,7 +102,7 @@
                         </figure>
                     </a>
                 </li>
-                <li>
+                <li class="vitrine-lista-item">
                     <a href="#">
                         <figure>
                             <img class="vitrine-imagem" src="img/produtos/miniatura5.png" alt="">
@@ -106,7 +110,7 @@
                         </figure>
                     </a>
                 </li>
-                <!-- <li>
+                <!-- <li class="vitrine-lista-item">
                     <a href="#">
                         <figure>
                             <img src="img/produtos/miniatura6.png" alt="">
@@ -119,7 +123,7 @@
         <nav class="vitrine vitrine--destaques conteudoPrincipal-vitrine conteudoPrincipal-vitrine2">
             <h2 class="vitrine-titulo">Mais Vendidos</h2>
             <ol class="vitrine-lista">
-                <li>
+                <li class="vitrine-lista-item">
                     <a href="#">
                         <figure>
                             <img class="vitrine-imagem" src="img/produtos/miniatura1.png" alt="">
@@ -127,7 +131,7 @@
                         </figure>
                     </a>
                 </li>
-                <li>
+                <li class="vitrine-lista-item">
                     <a href="#">
                         <figure>
                             <img class="vitrine-imagem" src="img/produtos/miniatura2.png" alt="">
@@ -135,7 +139,7 @@
                         </figure>
                     </a>
                 </li>
-                <li>
+                <li class="vitrine-lista-item">
                     <a href="#">
                         <figure>
                             <img class="vitrine-imagem" src="img/produtos/miniatura3.png" alt="">
@@ -143,7 +147,7 @@
                         </figure>
                     </a>
                 </li>
-                <li>
+                <li class="vitrine-lista-item">
                     <a href="#">
                         <figure>
                             <img class="vitrine-imagem" src="img/produtos/miniatura4.png" alt="">
@@ -151,7 +155,7 @@
                         </figure>
                     </a>
                 </li>
-                <li>
+                <li class="vitrine-lista-item">
                     <a href="#">
                         <figure>
                             <img class="vitrine-imagem" src="img/produtos/miniatura5.png" alt="">
@@ -159,7 +163,7 @@
                         </figure>
                     </a>
                 </li>
-                <li>
+                <li class="vitrine-lista-item">
                     <a href="#">
                         <figure>
                             <img class="vitrine-imagem" src="img/produtos/miniatura6.png" alt="">
